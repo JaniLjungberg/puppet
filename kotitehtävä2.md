@@ -16,20 +16,9 @@ Päätin, että yritän tässä tehtävässä asentaa Apache2 palvelimen ja vaih
 
 Aloitin luomalla uuden modulin kotihakemistoni github-kansioon modules.
 
-<<<<<<< HEAD
 	`mkdir -p modules/apache2/manifests`
 	`nano modules/apache2/manifests/init.pp`
 
 Tiedoston sisällöksi kirjoitin.
 
-![2-1](https://https://github.com/JaniLjungberg/puppetgit/edit/master/images/2-1.png)
-=======
-
-
-Seuraavaksi kirjoitin init.pp tiedoston sisällöksi seuraavaa.
-
-kuva 2-1
-  
-![kuva1] (/images/2-1.png)
-
->>>>>>> 810f0dda270d2dae8951a0f3fa9671a99041c665
+![text](https://github.com/JaniLjungberg/puppetgit/edit/master/images/2-1.png)
