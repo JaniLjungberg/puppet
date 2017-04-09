@@ -21,9 +21,20 @@ Aloitin luomalla uuden modulin kotihakemistoni github-kansioon modules.
 
 Tiedoston sisällöksi kirjoitin.
 
-![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-1)
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-3)
 
 Tällä modulilla apachen pitäisi siis asentua ja käynnistyä. Päätin kokeilla miten toimii.
+
+	sudo puppet apply --modulepath /home/jani/puppetgit/modules/ -e 'class{"apache2":}'
+	
+Komento meni läpi ja Apache asentui ja oli toiminnassa.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-4)
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-5)
+
+
+	
 
 
 
