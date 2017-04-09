@@ -16,4 +16,11 @@ Päätin, että yritän tässä tehtävässä asentaa Apache2 palvelimen ja vaih
 
 Aloitin luomalla uuden modulin kotihakemistoni github-kansioon modules.
 
-  mkdir 
+
+
+Seuraavaksi kirjoitin init.pp tiedoston sisällöksi seuraavaa.
+
+kuva 2-1
+  
+![kuva1] (/images/2-1.png)
+
