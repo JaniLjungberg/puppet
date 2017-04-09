@@ -21,4 +21,4 @@ Aloitin luomalla uuden modulin kotihakemistoni github-kansioon modules.
 
 Tiedoston sisällöksi kirjoitin.
 
-![image of init](puppetgit/images/2-1)
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-1)
