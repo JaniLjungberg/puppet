@@ -2,7 +2,7 @@
 
 Asenna ja konfiguroi jokin palvelin package-file-service -tyyliin Puppetilla.
 
-Julkaise kotitehtävä GitHubissa ja kirjoita raportti MarkDownilla.
+Julkaise kotitehtävä GitHubissa ja kirjoita raportti Mahttps://github.com/JaniLjungberg/puppetgitrkDownilla.
 
 ## Ympäristö:
 
@@ -21,4 +21,4 @@ Aloitin luomalla uuden modulin kotihakemistoni github-kansioon modules.
 
 Tiedoston sisällöksi kirjoitin.
 
-![image](/images/2-1.bin)
+![image of init](https://github.com/JaniLjungberg/puppetgit/images/2-1.png)
