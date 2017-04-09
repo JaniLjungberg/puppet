@@ -21,4 +21,4 @@ Aloitin luomalla uuden modulin kotihakemistoni github-kansioon modules.
 
 Tiedoston sisällöksi kirjoitin.
 
-![text](/images/2-1.png)
+![text](images/2-1.png)
