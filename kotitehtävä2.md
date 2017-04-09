@@ -21,7 +21,7 @@ Aloitin luomalla uuden modulin kotihakemistoni github-kansioon modules.
 
 Tiedoston sisällöksi kirjoitin.
 
-![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-3)
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-3.png)
 
 Tällä modulilla apachen pitäisi siis asentua ja käynnistyä. Päätin kokeilla miten toimii.
 
@@ -29,9 +29,9 @@ Tällä modulilla apachen pitäisi siis asentua ja käynnistyä. Päätin kokeil
 	
 Komento meni läpi ja Apache asentui ja oli toiminnassa.
 
-![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-4)
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-4.png)
 
-![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-5)
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/2-5.png)
 
 
 	
