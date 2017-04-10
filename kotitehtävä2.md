@@ -37,8 +37,7 @@ Seuraavaksi tarkoitus olisi muokata apachen asetustiedostoa erinäköiseksi.
 
 ## Apachen asetukset
 
-Seuraavaksi olisi tarkoitus muokata Apachen asetustiedostoa niin, että se avaisi default-sivun asemasta jonkin toisen tiedoston.
-Tämä tapahtuu luomalla apachen asetustiedostosta template.
+Seuraavaksi olisi tarkoitus muokata Apachen asetustiedostoa niin, että Timeout olisi oletuksen 300 sekuntia sijaan vain 60 sekuntia, jonka pitäisi nykyisin riittää vallan hyvin pyyntöjen käsittelyyn.
 
 Aloitin siirtymällä kansioon modules/apache2/ ja luomalla sinne kansion templates. Sitten kopioin apachen asetustiedoston kansioon.
 
