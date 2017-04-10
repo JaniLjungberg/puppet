@@ -2,7 +2,7 @@
 
 Asenna ja konfiguroi jokin palvelin package-file-service -tyyliin Puppetilla.
 
-Julkaise kotitehtävä GitHubissa ja kirjoita raportti Mahttps://github.com/JaniLjungberg/puppetgitrkDownilla.
+Julkaise kotitehtävä GitHubissa ja kirjoita raportti MarkDownilla.
 
 ## Ympäristö:
 
