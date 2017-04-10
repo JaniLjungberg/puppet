@@ -48,24 +48,27 @@ Aloitin siirtymällä kansioon modules/apache2/ ja luomalla sinne kansion templa
 
 Seuraavaksi tein muutoksia apachen asetustiedostoon template kansiossa. 
 
-kuva timeout
-
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/timeout.png)
 
 Asetus Timeout määrittelee kauan palvelin käyttää maksimissaan aikaa kunkin pyynnön käsittelyyn. Vaihdoin oletusasetuksen 300 sekuntia 60 sekuntiin ja tallensin tiedoston.
 
 Seuraavaksi piti editoida modulini päivittämään Apachen asetukset. 
 
-kuva uusimoduli
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/uusimoduli.png)
+
 
 Lopuksi kokeilin ajaa modulini uudestaan.
 
-result 
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/result.png)
+
 
 Kaikki näytti toimivan.
+
 
 Lähteenä käytetty omia vanhoja kotitehtäviäni ja Tero Karvisen ohjeistusta osoitteissa:
 
 https://janipuppet.wordpress.com/
+
 http://terokarvinen.com/2013/ssh-server-puppet-module-for-ubuntu-12-04
 
 
