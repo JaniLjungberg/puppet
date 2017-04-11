@@ -2,3 +2,18 @@ sudo puppet apply --modulepath /home/jani/puppetgit/modules/ -e 'class {banshee:
 
 Tämä on tallennuspaikka Linuxin keskitetty hallinta -kurssin kotitehtäville.
 sudo puppet apply --modulepath /home/jani/puppetgit/modules/ -e 'class {banshee:}'
+
+Sym Linkin luominen:
+
+jani@kilikali:/etc/apache2/sites-enabled$ sudo ln -s ../sites-available/kotisivu.conf .
+jani@kilikali:/etc/apache2/sites-enabled$ ls -l
+total 0
+lrwxrwxrwx 1 root root 32 huhti 11 15:09 kotisivu.conf -> ../sites-available/kotisivu.conf
+jani@kilikali:/etc/apache2/sites-enabled$ 
+
+tai 
+
+sudo cp -s ../sites-available/kotisivu.conf .
+
+
+
