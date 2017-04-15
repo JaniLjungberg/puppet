@@ -71,9 +71,9 @@ SSH oli nyt portissa 2222, kuten olin asettanutkin.
 
 Seuraavassa tehtävässä oli tarkoitus vaihtaa apachen oletussivu toiseen Puppettia käyttäen. 
 
-Otin pohjaksi vanhan moduulin, jota lähdin muokkaamaan. Tein tehtävää varten kuitenkin uuden moduulin, jonka nimeksi annoin omasivu.
+Tein tehtävää varten uuden moduulin, jonka nimeksi annoin omasivu.
 
-Ensiksi loin pohjan jossa asennetaan apache ja kokeilin että se toimii.
+Ensiksi loin pohjan, jossa asennetaan apache ja kokeilin että se toimii.
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-7.png)
 
