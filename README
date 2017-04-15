@@ -1,3 +1,5 @@
+# Muistiinpanoja
+
 sudo puppet apply --modulepath /home/jani/puppetgit/modules/ -e 'class {banshee:}'
 
 Tämä on tallennuspaikka Linuxin keskitetty hallinta -kurssin kotitehtäville.
