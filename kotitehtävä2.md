@@ -2,7 +2,7 @@
 
 Asenna ja konfiguroi jokin palvelin package-file-service -tyyliin Puppetilla.
 
-Julkaise kotitehtävä GitHubissa ja kirjoita raportti Mahttps://github.com/JaniLjungberg/puppetgitrkDownilla.
+Julkaise kotitehtävä GitHubissa ja kirjoita raportti MarkDownilla.
 
 ## Ympäristö:
 
@@ -37,8 +37,7 @@ Seuraavaksi tarkoitus olisi muokata apachen asetustiedostoa erinäköiseksi.
 
 ## Apachen asetukset
 
-Seuraavaksi olisi tarkoitus muokata Apachen asetustiedostoa niin, että se avaisi default-sivun asemasta jonkin toisen tiedoston.
-Tämä tapahtuu luomalla apachen asetustiedostosta template.
+Seuraavaksi olisi tarkoitus muokata Apachen asetustiedostoa niin, että Timeout olisi oletuksen 300 sekuntia sijaan vain 60 sekuntia, jonka pitäisi nykyisin riittää vallan hyvin pyyntöjen käsittelyyn.
 
 Aloitin siirtymällä kansioon modules/apache2/ ja luomalla sinne kansion templates. Sitten kopioin apachen asetustiedoston kansioon.
 
@@ -48,24 +47,27 @@ Aloitin siirtymällä kansioon modules/apache2/ ja luomalla sinne kansion templa
 
 Seuraavaksi tein muutoksia apachen asetustiedostoon template kansiossa. 
 
-kuva timeout
-
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/timeout.png)
 
 Asetus Timeout määrittelee kauan palvelin käyttää maksimissaan aikaa kunkin pyynnön käsittelyyn. Vaihdoin oletusasetuksen 300 sekuntia 60 sekuntiin ja tallensin tiedoston.
 
 Seuraavaksi piti editoida modulini päivittämään Apachen asetukset. 
 
-kuva uusimoduli
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/uusimoduli.png)
+
 
 Lopuksi kokeilin ajaa modulini uudestaan.
 
-result 
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/result.png)
+
 
 Kaikki näytti toimivan.
+
 
 Lähteenä käytetty omia vanhoja kotitehtäviäni ja Tero Karvisen ohjeistusta osoitteissa:
 
 https://janipuppet.wordpress.com/
+
 http://terokarvinen.com/2013/ssh-server-puppet-module-for-ubuntu-12-04
 
 
