@@ -106,43 +106,15 @@ Nyt sivut toimivat!
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-11.png)
 
+## Modulit Gittiin
 
+Viimeisenä kotitehtävänä oli laittaa modulit Gittiin. Olin jo kuitenkin tehnyt sen aikaisemmin ja modulit löytyvät 
+Gittistä osoitteesta https://github.com/JaniLjungberg/
 
+Kotitehtävien tekemiseen aikaa meni yli 6 tuntia. Sain tehtävät tehtyä tunnilla käsiteltyjen esimerkkien avulla.
 
+Lähteet: 
 
+https://www.puppetcookbook.com/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-     
+http://terokarvinen.com/
