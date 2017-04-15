@@ -86,13 +86,29 @@ Uudelleen nimesin tiedoston ja annoin sille nimeksi kotisivu.conf
 
         cp /etc/apache2/sites-available/000-default.conf /home/jani/puppetgit/modules/omasivu/templates/omasivu.conf
         
-Seuraavaksi muokkasin tiedostoa.
+Seuraavaksi muokkasin tiedostoa, mutta otin valmiin pohjan tunnilla tehdystä harjoituksesta.
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-8.png)
+
+Kotisivutiedostoni index.html kansiossa /home/jani/kotisivu oli tämännäköinen.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-10.png)
 
 Siirryin takaisin editoimaan init.pp tiedostoa. Lopulta se näytti tältä.
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-9.png)
+
+Koitin ajaa puppetilla modulin. Kaikki toimi kuten pitikin.
+
+Kotisivuni eivät kuitenkaan avautuneet! Mietin mikä oli vikana ja poistin yhden / -merkin kotisivu.conf -tiedostosta.
+
+Nyt sivut toimivat!
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-11.png)
+
+
+
+
 
 
 
