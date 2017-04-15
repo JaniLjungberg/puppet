@@ -67,6 +67,59 @@ SSH oli nyt portissa 2222, kuten olin asettanutkin.
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-6.png)
 
+## Apache ja oletussivu
+
+Seuraavassa tehtävässä oli tarkoitus vaihtaa apachen oletussivu toiseen Puppettia käyttäen. 
+
+Otin pohjaksi vanhan moduulin, jota lähdin muokkaamaan. Tein tehtävää varten kuitenkin uuden moduulin, jonka nimeksi annoin omasivu.
+
+Ensiksi loin pohjan jossa asennetaan apache ja kokeilin että se toimii.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-7.png)
+
+Ongelmia ei ilmennyt joten jatkoin eteenpäin.
+
+Seuraavaksi loin templates kansioon uuden kotisvun, jolla olen korvaamassa oletussivua ja lisäksi kopioin kansiosta
+/etc/apache2/sites-available tiedoston 000-default.conf, jota käytän pohjana omalle asetustiedostolleni.
+
+Uudelleen nimesin tiedoston ja annoin sille nimeksi kotisivu.conf
+
+        cp /etc/apache2/sites-available/000-default.conf /home/jani/puppetgit/modules/omasivu/templates/omasivu.conf
+        
+Seuraavaksi muokkasin tiedostoa.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-8.png)
+
+Siirryin takaisin editoimaan init.pp tiedostoa. Lopulta se näytti tältä.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-9.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
