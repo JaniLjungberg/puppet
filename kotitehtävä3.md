@@ -25,11 +25,11 @@ Manifests kansioon loin tiedoston init.pp
 
 Tänne kirjoitin sisällön, joka ensin päivittää apt-getin ja sitten asentaa ssh:n koneelle.
 
-kuva 3-1
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-1.png)
 
 Kokeilin ensin toimiiko ssh asennus ja apt-get.
 
-kuva 3-2
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-2.png)
 
 SSH oli jo valmiiksi asennettu ja apt-get toimi kuten pitikin. 
 
@@ -45,17 +45,17 @@ Editoin tiedoston sisällön ja vaihdoin porttinumeroksi 2222
 
     nano sshd_config
     
-Kuva 3-3
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-3.png)
 
 Palasin muokkaamaan init.pp tiedostoa. 
 
-Kuva 3-4
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-4.png)
 
 Lisäsin tiedostoon kohdat file, joka asentaa templaten kansioon /etc/ssh/ ja lisäksi käynnistin ssh palvelun uudelleen.
 
 Tallensin ja kokeilin miten pelittää.
 
-kuva 3-5
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-5.png)
 
 Ei virheilmoituksia ja kaikki näytti toimivan!
 
@@ -65,7 +65,7 @@ Kokeilin vielä olivatko asetukseni onnistuneet.
     
 SSH oli nyt portissa 2222, kuten olin asettanutkin.
 
-kuva 3-6
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/3-6.png)
 
     
 
