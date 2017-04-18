@@ -13,6 +13,11 @@ class omasivu {
 		enable => 'true',
 		require => Package["apache2"],
 	}
+
+	file {'/home/jani/kotisivu':
+		ensure => 'directory',
+	}
+
 	
 	file {'/home/jani/kotisivu/index.html':
 		content => template("omasivu/index.html"),
