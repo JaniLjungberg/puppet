@@ -6,6 +6,7 @@ class omasivu {
 
 	package {'apache2':
 		ensure => 'installed',
+		allowcdrom => true,
 	}
 
 	service {'apache2':
