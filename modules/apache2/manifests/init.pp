@@ -1,7 +1,8 @@
 class apache2 {
 
 	package {'apache2':
-		ensure => installed
+		ensure => installed,
+		allowcdrom => true,
 	}
 
 	file {'/etc/apache2/apache2.conf':
