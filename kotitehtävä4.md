@@ -14,9 +14,9 @@ Tarkoituksenani oli ensin kirjoittaa moduli, jonka avulla voi luoda monia uusia 
 
 Käytin samaa konetta kuin aikaisemmissakin kotitehtävissä, joten puppet ja git olivat valmiiksi asennettuja. Aloitiin suoraan luomalla uuden modulin multifile ja manifests-kansion, jonne loin tiedoston init.pp.
 
-  mkdir multifile
-  mkdir manifests
-  sudo nano init.pp
+    mkdir multifile
+    mkdir manifests
+    sudo nano init.pp
   
   
 
