@@ -17,6 +17,36 @@ Käytin samaa konetta kuin aikaisemmissakin kotitehtävissä, joten puppet ja gi
     mkdir multifile
     mkdir manifests
     sudo nano init.pp
+    
+Tiedoston sisällöksi kirjoitin seuraavaa:
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/4-1.png)
+
+Sitten koitin ajaa tiedoston komennolla:
+
+    sudo puppet apply --modulepath /home/jani/puppetgit/modules/ -e 'class {multifile:}'
+    
+En saanut virheilmoituksia.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/4-2.png)
+
+Lopuksi kävin tarkistamassa olivatko tiedostot ja kansio jotka loin olemassa.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/4-3.png)
+
+Kuten näkyy tiedostot ja kansio oli luoto ja tiedostojen sisällöksi oli tullut teksti nimisen muuttujan sisältö.
+
+Tehtävän tekemiseen ei kulunut kuin muutama tunti. Jatkossa kun tarkoituksena olisi kirjoittaa oma Puppet-moduli kurssin päätteeksi, sain tästä tehtävästä hyviä ideoita siitä, mitä haluaisin silloin toteuttaa. Tehtävä löytyy Githubin modules kansiosta.
+
+
+
+
+
+
+
+
+
+
   
   
 
