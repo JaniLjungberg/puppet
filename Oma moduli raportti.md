@@ -46,6 +46,12 @@ Normaaliin tyyliin loin ensin kansion, jonne uusi moduli sijoitetaan.
     
 Seuraavksi luotiin init.pp -tiedosto, jonne käyttäjän luomiseen tarkoitettu koodi sijoitetaan.
 
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user1.png)
+
+Seuraavaksi kotin ajaa modulin.
+
+
+
 
 
 
