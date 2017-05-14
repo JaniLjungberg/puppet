@@ -48,7 +48,33 @@ Seuraavksi luotiin init.pp -tiedosto, jonne käyttäjän luomiseen tarkoitettu k
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user1.png)
 
-Seuraavaksi kotin ajaa modulin.
+Käyttäjän luonnissa annoimme siis seuraavat parametrit:
+
+comment: kommenttikenttä käyttäjälle
+home: kotikansion sijainti
+shell: login shell
+UID: User ID, käyttäjän oma tunniste. Näiden suunnittelun tulisi noudattaa selkeää logiikkaa.
+GID: Groud ID, jokainen käyttäjä kuuluu oletuksena omaan ryhmäänsä, joka nimetään tilin mukaaan.
+Manage home: Luo käyttäjälle kotihakemiston, mutta vain jos muualla asetettu ensure =>present
+Password: Salasanan hash, joka on noudettu /etc/shadow tiedostosta komennolla cat /etc/shadow, yksinkertaiset lainausmerkit!
+Groups: Ryhmät joissa admin on jäseninä. Voidaan selvittää komennolla $groups jani
+
+Seuraavaksi kotin ajaa modulin. Pieniä virheitä oli kuitenkin monia, jotka on tosin korjattu jo yllä olevaan kuvaan.
+
+Nyt loimme siis tavallaan kopion pääkäyttäjä ja administraattoritilistä jani, jota voisimme käyttää myös muiden koneiden kanssa.
+En kuitenkaan uskaltanut laittaa modulia kirjoittamaan oikean käyttäjätili janin päälle, sillä en ollut varma 
+esimerkiksi miten salasana-asetukset kopioituisivat. Aluksi myös GUI ja GID olivat arvolla 1000, mutta koska alkuperäinen 
+käyttäjä jani oli jo sillä paikalla, ei kopiota voitu luoda niillä arvoilla.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user2.png)
+
+Kokeilin vielä kirjautua huvin vuoksi järjestelmään jani2 käyttäjällä.
+
+
+
+
+
+
 
 
 
