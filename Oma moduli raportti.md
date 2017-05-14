@@ -30,9 +30,25 @@ voidaan erilliset modulit vain yhdistää yhden classin sisään.
 Aloitin kuitenkin tarkistamalla millaisia käyttäjätilejä koneellani oli komennolla:
 
     awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd
+    
+Vanhoista tehtävistä koneelta löytyi sekalainen joukko käyttäjätilejä, jotka poistin komennolla:
+
+    sudo deluser username
 
 
 ## Yhden käyttäjän luominen
+Aloitamme modulien kirjoittamisen modulilla, joka luo yhden käyttäjätilin.
+
+Normaaliin tyyliin loin ensin kansion, jonne uusi moduli sijoitetaan.
+
+    mkdir user-jani
+    mkdir manifests
+    
+Seuraavksi luotiin init.pp -tiedosto, jonne käyttäjän luomiseen tarkoitettu koodi sijoitetaan.
+
+
+  
+    
 
 
 
