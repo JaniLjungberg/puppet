@@ -27,6 +27,11 @@ asetuksia sisältävät modulit voivat olla helpommin hallittavissa, kuin yksi j
 yksittäiset asetukset voidaan ottaa käyttöön konekohtaisesti ja jos jollekin kohteelle on asennettava kaikki käyttäjätilit,
 voidaan erilliset modulit vain yhdistää yhden classin sisään.
 
+Aloitin kuitenkin tarkistamalla millaisia käyttäjätilejä koneellani oli komennolla:
+
+    awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd
+
+
 ## Yhden käyttäjän luominen
 
 
