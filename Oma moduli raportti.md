@@ -68,7 +68,35 @@ käyttäjä jani oli jo sillä paikalla, ei kopiota voitu luoda niillä arvoilla
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user2.png)
 
-Kokeilin vielä kirjautua huvin vuoksi järjestelmään jani2 käyttäjällä.
+Kokeilin vielä kirjautua huvin vuoksi järjestelmään jani2 käyttäjällä. Kirjautuminen onnistui.
+
+## SSH avaimien hallinta
+
+Yksi hallinnointia helpottava toimenpide on SSH avaimien luonti ja käyttöönotto client-koneilla. Kokeilen aluksi miten 
+tämä onnistuu ja voinko testata tämän toimivuutta ilman, että luon oikean master-client -ympäristön labraluokkaan.
+
+Aloitetaan luomalla uusi SSH-avainpari.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user3.png)
+
+Sitten palaamme muokkaamaan aikaisempaa modulia, jonne lisäämme käyttäjäkohtaisen salausavaimen.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user4.png)
+
+Seuraavaksi ajoin modulin vain nähdäkseni mitä tapahtuu.
+
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user5.png)
+
+Nähdäkseni avaimen lisääminen onnistui, mutta voimme tarkistaa löytyykö se oikeasta paikasta.
+
+
+
+
+
+
+
+
+
 
 
 
