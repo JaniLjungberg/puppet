@@ -131,7 +131,12 @@ Kokeilin uuden tero käyttäjän luomista. Käyttäjän ja ssh-avaimen luonti on
 
 ## Käyttäjäoikeuksien hallinta
 
-Haluamme myös keskittää käyttäjäoikeudet konekohtaisesti ja tämä onnistuisi muokkaamalla 
+Haluamme myös keskittää käyttäjäoikeudet konekohtaisesti ja tämä onnistuisi muokkaamalla konekohtaisesti 
+tiedostoa /etc/sudoers
+
+Kirjoitan seuraavaksi lyhyen file - package -rakenteen, jossa editoimme puppetilla client koneen käyttäjäoikeuksia.
+
+
 
 
 
