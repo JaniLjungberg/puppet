@@ -75,7 +75,9 @@ Kokeilin vielä kirjautua huvin vuoksi järjestelmään jani2 käyttäjällä. K
 Yksi hallinnointia helpottava toimenpide on SSH avaimien luonti ja käyttöönotto client-koneilla. Kokeilen aluksi miten 
 tämä onnistuu ja voinko testata tämän toimivuutta ilman, että luon oikean master-client -ympäristön labraluokkaan.
 
-Aloitetaan luomalla uusi SSH-avainpari.
+Aloitetaan luomalla uusi SSH-avainpari komennolla:
+
+    sudo ssh-keygen
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user3.png)
 
