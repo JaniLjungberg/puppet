@@ -73,9 +73,14 @@ Kokeilin vielä kirjautua huvin vuoksi järjestelmään jani2 käyttäjällä. K
 ## SSH avaimien hallinta
 
 Yksi hallinnointia helpottava toimenpide on SSH avaimien luonti ja käyttöönotto client-koneilla. Kokeilen aluksi miten 
-tämä onnistuu ja voinko testata tämän toimivuutta ilman, että luon oikean master-client -ympäristön labraluokkaan.
+tämä onnistuu ja voinko testata tämän toimivuutta ilman, että luon oikean master-client -ympäristön labraluokkaan. 
 
-Aloitetaan luomalla uusi SSH-avainpari.
+Tarkoituksena on siis luoda ssh -avainpari ja kopioida julkinen avain clientin käyttäjän authorized_keys tiedostoon kansioon
+/home/username/.ssh/authorized_keys
+
+Aloitetaan luomalla uusi SSH-avainpari komennolla:
+
+    sudo ssh-keygen
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user3.png)
 
@@ -129,9 +134,66 @@ Kokeilin uuden tero käyttäjän luomista. Käyttäjän ja ssh-avaimen luonti on
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user9.png)
 
-## Käyttäjäoikeuksien hallinta
+ ## Yhteenvetona
+ 
+ Tehtävä jää nyt kyllä pahasti kesken. Tarkoituksena oli vielä hallita käyttäjien oikeuksia, mutta en saanut edes tätä
+ vaihetta kunnolla loppuun tai testattua. Havainnoin nyt, miten visioin modulien toimintaa ja mitä vaaditaan, jotta 
+ ssh -autentikointi ilman salasanaa käyttäen suojausavaimia saataisiin toimimaan. 
+ 
+ Lisäksi hahmottelen mitä site.pp -tiedoston sisällön pitäisi näyttää, jotta modulit tulisivat hyödynnettyä.
+ 
+ Aluksi tarvitaan tyypillinen package-file-service -rakenne, jolla ssh asennetaan, sitten editoidaan sen asetuksia 
+ ja lopulta potkaistaan palvelua sen uudelleen käynnistämiseksi. Idea on tarkalleen sama kuin aikaisemmassa tehtävässä,     jossa ssh -portti vaihdettiin toiseen. Jotta kirjautuminen salasanalla voitaisiin kytkjeä pois päältä, pitää konfiguraatiotiedoston /etc/ssh/sshd_config kohta:
+ 
+ #passwordAuthentication yes
+ 
+ Muuttaa niin, että siinä lukee:
+ 
+ passwordAuthentication no
+ 
+ Voisimme periaatteessa käyttää täysin vanhaa ssh-portti modulia ja editoida sen template-kansiota niin, että vaihdetaan
+ portti takaisin 22:een ja lisätään ylläoleva passwordAuthentication kohta.
+ 
+ Modulin sisältö on seuraava:
+ 
+ ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user10.png)
+ 
+ Lopuksi tarvittaisiin vielä site.pp -tiedosto, jossa ensin luodaan uudet käyttäjät ja kopioidaan julkiset salausavaimet
+ kotikansion tiedostoon ja sitten editoidaan ssh-asetustiedostoa, jotta salasanakirjautuminen voidaan estää.
+ 
+ Site.pp tiedosto tulee kansiooon /etc/puppet/manifests/site.pp
+ 
+ Tässä testiskenaariossa sen sisältö olisi jotakuinkin tälläinen.
+ 
+  ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user11.png)
+  
+  Tehtävä jäi tosi pahasti kesken ja jäi harmittamaan, kun en ehtinyt testata koko hommaa kunnolla. 
+  
+  Aikaa kului kuitenkin aikalailla ja molemmat käyttäjiä lisäävät puppet-modulit toimivat kuten olin ajatellutkin.
+  Turhaa aikaa kului kuitenkin kun yritin saada ssh -yhteyttä toimimaan pelkillä salausavaimilla.
+  
+ 
+ 
+ ## Lähteet:
+  
+  http://manuel.kiessling.net/2014/03/26/building-manageable-server-infrastructures-with-puppet-part-4/
+  
+  /etc/puppet/manifests/site.pp
+  
+  https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-16-04
+  
+  http://www.hostingadvice.com/how-to/linux-add-user-to-group/
+  
+  https://docs.puppet.com/puppet/4.10/quick_start_user_group.html
+  
+  https://docs.puppet.com/puppet/latest/type.html#user-attributes
+ 
+ 
+ 
+ 
+ 
+ 
 
-Haluamme myös keskittää käyttäjäoikeudet konekohtaisesti ja tämä onnistuisi muokkaamalla 
 
 
 
