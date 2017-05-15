@@ -92,6 +92,7 @@ hyvä, että olimme luoneet käyttäjän jani sen sijaan, että olisimme käytt�
 toisella käyttäjällä ja tarkistaa, olivatko salausavaimemme ilmestyneet piilotettuun kansioon .ssh, joka löytyy 
 kotihakemistostamme.
 
+![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user6.png)
 
 
 
