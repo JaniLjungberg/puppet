@@ -73,7 +73,10 @@ Kokeilin vielä kirjautua huvin vuoksi järjestelmään jani2 käyttäjällä. K
 ## SSH avaimien hallinta
 
 Yksi hallinnointia helpottava toimenpide on SSH avaimien luonti ja käyttöönotto client-koneilla. Kokeilen aluksi miten 
-tämä onnistuu ja voinko testata tämän toimivuutta ilman, että luon oikean master-client -ympäristön labraluokkaan.
+tämä onnistuu ja voinko testata tämän toimivuutta ilman, että luon oikean master-client -ympäristön labraluokkaan. 
+
+Tarkoituksena on siis luoda ssh -avainpari ja kopioida julkinen avain clientin käyttäjän authorized_keys tiedostoon kansioon
+/home/username/.ssh/authorized_keys
 
 Aloitetaan luomalla uusi SSH-avainpari komennolla:
 
