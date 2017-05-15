@@ -87,7 +87,12 @@ Seuraavaksi ajoin modulin vain nähdäkseni mitä tapahtuu.
 
 ![image of init](https://github.com/JaniLjungberg/puppetgit/blob/master/images/user5.png)
 
-Nähdäkseni avaimen lisääminen onnistui, mutta voimme tarkistaa löytyykö se oikeasta paikasta.
+Nähdäkseni avaimen lisääminen onnistui, mutta voimme tarkistaa löytyykö se oikeasta paikasta. Testausta varten olikin
+hyvä, että olimme luoneet käyttäjän jani sen sijaan, että olisimme käyttäneet oikeaa root-tiliä. Nyt pystyimme kirjautumaan 
+toisella käyttäjällä ja tarkistaa, olivatko salausavaimemme ilmestyneet piilotettuun kansioon .ssh, joka löytyy 
+kotihakemistostamme.
+
+
 
 
 
