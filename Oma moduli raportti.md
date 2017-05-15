@@ -51,12 +51,19 @@ Seuraavksi luotiin init.pp -tiedosto, jonne käyttäjän luomiseen tarkoitettu k
 Käyttäjän luonnissa annoimme siis seuraavat parametrit:
 
 *comment: kommenttikenttä käyttäjälle
+
 *home: kotikansion sijainti
+
 *shell: login shell
+
 *UID: User ID, käyttäjän oma tunniste. Näiden suunnittelun tulisi noudattaa selkeää logiikkaa.
+
 *GID: Groud ID, jokainen käyttäjä kuuluu oletuksena omaan ryhmäänsä, joka nimetään tilin mukaaan.
+
 *Manage home: Luo käyttäjälle kotihakemiston, mutta vain jos muualla asetettu ensure =>present
+
 *Password: Salasanan hash, joka on noudettu /etc/shadow tiedostosta komennolla cat /etc/shadow, yksinkertaiset lainausmerkit!
+
 *Groups: Ryhmät joissa admin on jäseninä. Voidaan selvittää komennolla $groups jani
 
 Seuraavaksi kotin ajaa modulin. Pieniä virheitä oli kuitenkin monia, jotka on tosin korjattu jo yllä olevaan kuvaan.
